@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dipanshu | DevOps Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2 class="logo">Dipanshu</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Hello, I'm Dipanshu</h1>
+        <p>DevOps Engineer | Cloud | Kubernetes | CI/CD</p>
+        <button onclick="scrollToSection('contact')">Hire Me</button>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate DevOps Engineer with experience in AWS, Docker,
+            Kubernetes, Jenkins, and CI/CD automation.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-box">
+            <div>Linux</div>
+            <div>AWS</div>
+            <div>Docker</div>
+            <div>Kubernetes</div>
+            <div>Jenkins</div>
+            <div>Terraform</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Microservices Deployment</h3>
+            <p>Deployed Flask microservices on Kubernetes with CI/CD using Jenkins.</p>
+        </div>
+        <div class="project-card">
+            <h3>Infrastructure Automation</h3>
+            <p>Provisioned AWS infrastructure using Terraform and automated deployment.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form onsubmit="return submitForm(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Dipanshu. All Rights Reserved.</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
